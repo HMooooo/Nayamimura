@@ -1,0 +1,77 @@
+body {
+    padding-top: 25vh; /* ヘッダーの後ろに要素が隠れないようにするため */
+}
+
+header {
+    width: 100%; /* 幅いっぱいを指定 */
+    height: 25vh; /* 高さを50pxに指定 */
+    background: #CCC; /* 背景色にグレーを指定 */
+    padding: 5vh 10vw; /* ヘッダーに上下左右それぞれ余白を指定 */
+    box-sizing: border-box; /* padding分を含んで幅を100%にするため */
+    position: fixed; /* ウィンドウを基準に画面に固定 */
+    top: 0; /* 上下の固定位置を上から0pxにする */
+    left: 0; /* 左右の固定位置を左から0pxにする */
+    display: flex; /* 中の要素を横並びにする */
+    align-items: center; /* 中の要素を上下中央に並べる */
+}
+
+header .gnav .menu {
+    display: flex; /* 中の要素を横並びにする */
+}
+
+header .gnav .menu li {
+    list-style: none; /* リストの[・]を消す */
+}
+
+header .gnav .menu li + li {
+    margin-left: 5vw; /* メニューそれぞれに間隔をあけるため */
+}
+
+.category{
+    display: flex; /* 中の要素を横並びにする */
+    list-style: none; /* リストの[・]を消す */
+   
+}
+.category li{
+ margin-left: 5vw; /* メニューそれぞれに間隔をあけるため */
+}
+
+
+main {
+    height: 100vw; /* スクロールの演出を見れるようにmainに高さを指定 */
+}
+
+.serch{
+    text-align: center;
+}
+
+.serch input{
+    width: 50vw;
+    height: 6vh;
+   text-align: left;
+}
+
+.page{
+   text-align: center;
+}
+
+.toukou{
+    display: inline-block;
+    width: 45%;
+    margin: 2vh 2vw;
+    border: 1px solid black;
+}
+
+.icon{
+    display: inline-block;
+    width: 10vw;
+    height: 10vh;
+    object-fit: contain;
+}
+ .username{
+    display: inline;
+ }
+
+ .tagspase{
+    border-top: 1px solid black;
+ }

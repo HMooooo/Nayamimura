@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>悩み一覧</title>
+    <script src="jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="./../stylesheet/ichiran.css">
+    
+</head>
+<header>
+    <button class="login">ログイン</button>
+    <h1 class="appName">アプリ名</h1>
+     <button class="newpost">新規投稿</button>
+    <nav class="gnav">
+        
+        
+       
+       
+    </nav>
+</header>
+
+<main>
+    <div class="contents">
+        <div class="serch">
+            <input id="serchtext" class="serch" type="serch" placeholder="検索">
+            <button id="serchbutton" class="serchbutton">search</button>
+        </div>
+        <input id="checkbox" type="checkbox">
+        <label for="checkbox">タグ完全一致のみ検索する</label>
+
+        <div class="category_title">新規投稿</div>
+        <div id="toukou_spase"></div>
+
+        <div class="page">
+            <button id="pageback">◀</button>
+            <a id="page1">1</a>
+            <a id="page2">2</a>
+            <a id="page3">3</a>
+            <a id="page4">4</a>
+            <a id="page5">5</a>
+            <a id="page6">6</a>
+            <a id="page7">7…</a>
+            <button id="pagenext">▶</button>
+        </div>
+    </div>
+    <div class="sub">
+        <div style="padding:6px;background-color:white;">
+        <div style="font-size:25px;text-align: center;color:#4aa067;">カテゴリーを選ぶ</div>
+        <ul class="category">
+            <li><a href="ichiran.html">すべて</a></li>
+            <li><a href="category.html?category=1&page=1">人間関係</a></li>
+            <li><a href="category.html?category=2&page=1">お金</a></li>
+            <li><a href="category.html?category=3&page=1">健康</a></li>
+        </ul>
+    </div>
+    </div>
+    <script src="ichiran.js"></script>
+</main>
+
+</body>
+
+</html>

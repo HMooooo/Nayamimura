@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mypage</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-messaging.js"></script>
+</head>
+<body>
+    <header>
+        <button class="login">ログイン</button>
+    <h1 class="appName">アプリ名</h1>
+     <button class="newpost">新規投稿</button>
+    </header>
+
+    <main>
+        <div class="main__inner">
+            <div class="main__head">
+                <div class="user__info">
+                    <div class="user__icon">
+                        <img class="user__icon-img" src="サカバンバスピス.jpg" alt="">
+                    </div>
+                    <div class="user__name">
+                        <p>ユーザー名</p>
+                    </div>
+                    
+                </div>
+                <div class="user__btn">
+                    <button>編集</button>
+                </div>
+            </div>
+            <div class="mypost">
+                <div class="mypost__inner">
+                    <article class="mypost__cards">
+                        <div class="mypost__title">
+                            <h3>タイトル</h3>
+                        </div>
+                        <time>2023-11-23</time>
+                        <div class="mypost__texts">本文あああああああああああああああああ</div>
+                        <div class="mypost__texts-more">
+                            <p>もっと見る▼</p>
+                        </div>
+                        <hr class="mypost__hr">
+                        <div class="mypost__tag">#タグ１　#タグ２</div>
+                    </article>
+                    <article class="mypost__cards">
+                        <div class="mypost__title">
+                            <h3>タイトル</h3>
+                        </div>
+                        <div class="mypost__texts">
+                            本文あああああああああああああああああ
+                        </div>
+                        <div class="mypost__texts-more">
+                            <p>もっと見る▼</p>
+                        </div>
+                        <hr class="mypost__hr">
+                        <div class="mypost__tag">#タグ１　#タグ２</div>
+                    </article>
+                    <article class="mypost__cards">
+                        <div class="mypost__title">
+                            <h3>タイトル</h3>
+                        </div>
+                        <div class="mypost__texts">
+                            本文あああああああああああああああああ
+                        </div>
+                        <div class="mypost__texts-more">
+                            <p>もっと見る▼</p>
+                        </div>
+                        <hr class="mypost__hr">
+                        <div class="mypost__tag">#タグ１　#タグ２</div>
+                    </article>
+                    <article class="mypost__cards">
+                        <div class="mypost__title">
+                            <h3>タイトル</h3>
+                        </div>
+                        <div class="mypost__texts">
+                            本文あああああああああああああああああ
+                        </div>
+                        <div class="mypost__texts-more">
+                            <p>もっと見る▼</p>
+                        </div>
+                        <hr class="mypost__hr">
+                        <div class="mypost__tag">#タグ１　#タグ２</div>
+                    </article>
+                    <article class="mypost__cards">
+                        <div class="mypost__title">
+                            <h3>タイトル</h3>
+                        </div>
+                        <div class="mypost__texts">
+                            本文あああああああああああああああああ
+                        </div>
+                        <div class="mypost__texts-more">
+                            <p>もっと見る▼</p>
+                        </div>
+                        <hr class="mypost__hr">
+                        <div class="mypost__tag">#タグ１　#タグ２</div>
+                    </article>
+                   
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    
+</body>
+</html>

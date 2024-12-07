@@ -1,0 +1,242 @@
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: #e4e4e4;
+}
+
+.header__inner {
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header__title h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.header__btn {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    height: 50px;
+    background-color: rgb(7, 161, 161);
+
+}
+
+.header__btn-text {
+    color: rgb(44, 44, 44);
+}
+
+/* モーダルコンテンツ */
+/* モーダルが非表示の初期状態 */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    /* 背景を薄くする色 */
+    justify-content: center;
+    align-items: center;
+}
+
+/* モーダル内のコンテンツ */
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+/* モーダル内の×ボタン */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    vertical-align: -2px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+  
+  input[type="radio"]:checked:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #000;
+    content: '';
+  }
+
+.input-name {
+    border: solid 1px #565656;
+}
+
+.textbox-003-label,
+.textbox-003 {
+    color: #333;
+}
+
+.textbox-003-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: .9em;
+}
+
+.textbox-003 {
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 3px;
+    background: #eff1f5;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.textbox-003::placeholder {
+    color: #999;
+}
+
+.modal-img {
+    width: 50px;
+    height: 50px;
+}
+
+.button-002 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin:0 auto;
+    padding: .9em 2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #2589d0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.button-003 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin:0 auto;
+    padding: .9em 2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: solid 1px #2589d0;
+    color: #000000;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.button-002:hover {
+    background-color: #1579c0;
+}
+
+
+.main__inner {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.main__head {
+    display: flex;
+    margin: 30px 0;
+    align-items: center;
+}
+
+.user__info {
+    display: flex;
+    align-items: center;
+}
+
+.user__icon {
+    width: 100px;
+    height: 100px;
+}
+
+.user__name {
+    margin-left: 30px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.user__icon-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user__btn {
+    margin-left: auto;
+    border: 1px solid #565656;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+.mypost__inner {
+    width: 100%;
+    display: flex;
+    align-content: flex-start;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    gap: 20px 0;
+}
+
+.mypost__cards {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 1px solid #565656;
+    /* 枠の色と太さ */
+    box-shadow: 2px 2px 5px #b0b0b0;
+    padding: 10px;
+    margin-left: 3%;
+}
+
+.mypost__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.mypost__texts {
+    margin-bottom: 20px;
+}
+
+.mypost__texts-more {
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+.mypost__tag {
+    margin-top: 20px;
+}

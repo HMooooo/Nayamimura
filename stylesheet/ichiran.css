@@ -1,0 +1,934 @@
+/* Google font Icon */
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons+Outlined);
+
+@media all and (max-width:768px){
+body {
+    padding-top: 19vh; /* ヘッダーの後ろに要素が隠れないようにするため */
+}
+
+html{
+    background-color: #ededed;
+}
+
+header {
+    /*ヘッダー*/
+    width: 100%; /* 幅いっぱいを指定 */
+    height: 13vh; /* 高さを50pxに指定 */
+    background: #ffffff; /* 背景色にグレーを指定 */
+    padding-left: 0;
+    box-sizing: border-box; /* padding分を含んで幅を100%にするため */
+    position: fixed; /* ウィンドウを基準に画面に固定 */
+    top: 0; /* 上下の固定位置を上から0pxにする */
+    left: 0; /* 左右の固定位置を左から0pxにする */
+    display: flex; /* 中の要素を横並びにする */
+    align-items: center; /* 中の要素を上下中央に並べる */
+    z-index: 10;
+    
+}
+
+.appName{ /*アプリのロゴをいれる*/
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.newpost{ /*投稿ボタン*/
+    margin-left: 0 auto;
+    margin-right: 2vw;
+    display: none;
+}
+
+.login{ /*ログインボタン*/
+    margin-left: 2vw;
+    display: none;
+}
+
+header .gnav .menu {
+    display: flex; /* 中の要素を横並びにする */
+}
+
+header .gnav .menu li {
+    list-style: none; /* リストの[・]を消す */
+}
+
+header .gnav .menu li + li {
+    margin-left: 5vw; /* メニューそれぞれに間隔をあけるため */
+}
+
+.category{
+    padding: 0;
+    list-style: none; /* リストの[・]を消す */
+   
+}
+
+main {
+    height: 100vw; /* スクロールの演出を見れるようにmainに高さを指定 */
+    display: flex;
+}
+
+
+
+/*検索ボックス*/
+.serch{
+    text-align: center;
+}
+
+.serch input{
+    width: 60vw;
+    height: 8vh;
+   text-align: left;
+}
+
+.serchbutton{ 
+    cursor: pointer;
+    font-size: 1.2em;
+    border: none;
+    background: #4aa067;
+    border: 1px solid #4aa067;
+    border-radius: 3px;
+    color: #fff;
+    outline : none;
+    width: 3.5em;
+    height: 1.9em;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Material Icons Outlined';
+    content: "e8b6";
+  }
+
+  
+input[type=checkbox]{
+    transform: scale(2);
+    margin-top: 3vh;
+    margin-left: 7vw;
+    accent-color: #cc7700;
+    z-index: 1;
+}
+
+/*投稿の上に表示されるカテゴリタイトル*/
+.category_title{
+    font-size: 45px;
+    border-bottom: solid 3px #4aa067 ;
+    color: #4aa067;
+    margin: 3vh 0;
+    padding-left: 2vw;
+ }
+
+/*投稿の表示*/
+.page{
+   text-align: center;
+}
+
+.toukou{
+    display: inline-block;
+    width: 95%;
+    margin: 2vh 2vw;
+    border: 1px none black;
+    border-radius: 5px;
+}
+
+.title{
+    display: block;
+    margin: 5px;
+    margin-left: 2vw;
+    margin-top: 9px;
+    font-size: 30px
+    
+}
+
+.icon{
+    margin-left: 1vw;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+ .username{
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 15px;
+ }
+
+ .main{
+   text-align: left;
+   display: inline-block;
+    height: 100px;
+    width: 80%;
+    margin: 5px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+ }
+
+ .tagspase{
+    border-top: 1px solid black;
+    padding-left: 2vw;
+    padding-right: 2vw;
+ }
+
+ .tag{
+    margin: 10px;
+    display: inline-block;
+
+ }
+
+ .toukou{
+    background-color: #FFFFFF;
+    color: black;
+ }
+
+ .toukou > a:visited{
+   color: black;
+ }
+
+ .contents{
+    width: 100%;
+    height: 100%;
+ }
+
+ /*右の欄*/
+ .sub{
+    margin: 0 2vw;
+    width: 25%;
+    display: none;
+ }
+
+ .category{
+    font-size: 20px;
+ }
+
+ .category li{
+    margin: 2vh 0;
+    text-align: center;
+    text-decoration: none;
+ }
+
+ /*投稿詳細画面*/
+.shousai{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10vh;
+}
+
+ .moto_post{
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    border-radius: 5px;
+    padding: 2vh 2vw;
+ }
+
+ .s_title{
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+ }
+
+ .s_icon{
+    margin-left: 1vw;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.s_username{
+    margin-left: 5px;
+    display: inline;
+    vertical-align: top;
+    font-size: 22px;
+ }
+
+ .s_time{
+    margin-left: 5px;
+    display: inline;
+    vertical-align: top;
+    font-size: 18px;
+ }
+
+ .s_div{
+    display: inline-block;
+    vertical-align: top;
+ }
+
+ .s_main{
+    padding-bottom: 30px;
+ }
+
+ .s_comment{
+    display: block;
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    border-radius: 5px;
+    padding: 2vh 2vw;
+ }
+
+ .replybtn{
+    display: block;
+    margin: auto;
+    font-size: 30px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border-radius: 10px;
+    margin-top: 1vh;
+    border: none;
+    background-color: #4aa067;
+    color: white;
+ }
+
+ .comment-list{
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    border-radius: 5px;
+    padding: 2vh 2vw;
+ }
+
+ .time{
+    margin-left: 5px;
+    display: inline;
+    vertical-align: top;
+    font-size: 14px;
+ }
+
+ .category_title_sub{
+    font-size: 25px;
+    color: #4aa067;
+    margin: 3vh 0;
+    padding-left: 2vw;
+ }
+
+ .mypost__texts-more{
+   opacity: 0;
+   text-align: right;
+   margin-right: 2vw;
+ }
+
+.newpost{
+   padding: 1vh 1vw;
+   border-radius: 10px;
+   border: none;
+   background-color: #4aa067;
+   color: white;
+   font-size: 25px;
+ }
+
+ .login{
+   padding: 1vh 1vw;
+   border-radius: 10px;
+   border: solid 3px #4aa067;
+   background-color: white;
+   color: #4aa067;
+   font-size: 25px;
+ }
+
+ .mypage{
+   display: none;
+   padding: 1vh 1vw;
+   border-radius: 10px;
+   border: solid 3px #4aa067;
+   background-color: white;
+   color: #4aa067;
+   font-size: 25px;
+ }
+
+ a{
+   color: black;
+   text-decoration: none;
+ }
+
+ .back{
+   font-family: 'Material Icons Outlined';
+    content: "e5c4";
+    border: none;
+    font-size: 25px;
+ }
+
+ li:has(a){
+   display: block;
+   text-align: center;
+ }
+
+ .tagicon{
+   display: inline;
+   font-family: 'Material Icons Outlined';
+   content: "e54e";
+   font-size: 20px;
+ }
+
+ .categoryCheckbox:has(label){
+   transform: scale(1);
+   accent-color: #cc7700;
+   z-index: 1;
+   font-size: 25px
+ }
+
+ .tagaddbtn{
+   display: block;
+   font-size: 20px;
+   padding: 1vh 1vw;
+   border-radius: 10px;
+   border: none;
+   background-color: #4aa067;
+   color: white;
+   margin: auto;
+ }
+
+ .postbtn{
+   display: block;
+   font-size: 40px;
+   margin: auto;
+   padding: 1vh 1vw;
+   border-radius: 10px;
+   border: none;
+   background-color: #4aa067;
+   color: white;
+ }
+
+ .login_input{
+   width: 70%;
+   display: block;
+   font-size: 30px;
+   margin: 2vh;
+ }
+
+ .initial_a{
+   color: blue;
+   text-decoration: underline;
+ }
+
+ /* チェックボックスを非表示にする */
+.drawer_hidden {
+   display: none;
+ }
+ 
+ /* ハンバーガーアイコンの設置スペース */
+ .drawer_open {
+   display: flex;
+   height: 60px;
+   width: 60px;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   z-index: 100;/* 重なり順を一番上にする */
+   cursor: pointer;
+ }
+ 
+ /* ハンバーガーメニューのアイコン */
+ .drawer_open span,
+ .drawer_open span:before,
+ .drawer_open span:after {
+   content: '';
+   display: block;
+   height: 3px;
+   width: 25px;
+   border-radius: 3px;
+   background: #333;
+   transition: 0.5s;
+   position: absolute;
+ }
+ 
+ /* 三本線の一番上の棒の位置調整 */
+ .drawer_open span:before {
+   bottom: 8px;
+ }
+ 
+ /* 三本線の一番下の棒の位置調整 */
+ .drawer_open span:after {
+   top: 8px;
+ }
+ 
+ /* アイコンがクリックされたら真ん中の線を透明にする */
+ #drawer_input:checked ~ .drawer_open span {
+   background: rgba(255, 255, 255, 0);
+ }
+ 
+ /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+ #drawer_input:checked ~ .drawer_open span::before {
+   bottom: 0;
+   transform: rotate(45deg);
+ }
+ 
+ #drawer_input:checked ~ .drawer_open span::after {
+   top: 0;
+   transform: rotate(-45deg);
+ }
+   
+ /* メニューのデザイン*/
+ .nav_content {
+   width: 50%;
+   height: 100%;
+   margin-left: 50%;
+   position: fixed;
+   top: 0;
+   left: 100%; /* メニューを画面の外に飛ばす */
+   z-index: 99;
+   background: white;
+   transition: .5s;
+   border-left: black solid 1px;
+ }
+ 
+ /* メニュー黒ポチを消す */
+ .nav_list {
+   list-style: none;
+   margin-bottom: 0;
+ }
+ 
+ /* アイコンがクリックされたらメニューを表示 */
+ #drawer_input:checked ~ .nav_content {
+   left: 0;/* メニューを画面に入れる */
+ }
+
+ .nav_title{
+   border: black solid 1px;
+   display: block;
+   font-size: 20px;
+   /* background-color: #e6e6e6; */
+   text-align: center;
+   padding: 2vh;
+   padding-right: 0;
+   padding-bottom: 0;
+ }
+
+ .nav_item{
+   background-color: #dddcdc;
+   padding: 2vh;
+ }
+
+ .icon_newpost{
+   font-family: 'Material Icons Outlined';
+   content: "e3c9";
+   font-size: 10px;
+   color: #4aa067;
+   background-color: white;
+   border: none;
+ }
+}
+
+
+
+
+
+@media all and (min-width:769px){
+   body {
+       padding-top: 19vh; /* ヘッダーの後ろに要素が隠れないようにするため */
+   }
+   
+   html{
+       background-color: #ededed;
+   }
+   
+   header {
+       /*ヘッダー*/
+       width: 100%; /* 幅いっぱいを指定 */
+       height: 13vh; /* 高さを50pxに指定 */
+       background: #ffffff; /* 背景色にグレーを指定 */
+       padding-left: 0;
+       box-sizing: border-box; /* padding分を含んで幅を100%にするため */
+       position: fixed; /* ウィンドウを基準に画面に固定 */
+       top: 0; /* 上下の固定位置を上から0pxにする */
+       left: 0; /* 左右の固定位置を左から0pxにする */
+       display: flex; /* 中の要素を横並びにする */
+       align-items: center; /* 中の要素を上下中央に並べる */
+       z-index: 10;
+       
+   }
+   
+   .appName{ /*アプリのロゴをいれる*/
+       display: inline-block;
+       margin: 0 auto;
+   }
+   
+   .newpost{ /*投稿ボタン*/
+       margin-left: 0 auto;
+       margin-right: 2vw;
+   }
+   
+   .login{ /*ログインボタン*/
+       margin-left: 2vw;
+   }
+   
+   header .gnav .menu {
+       display: flex; /* 中の要素を横並びにする */
+   }
+   
+   header .gnav .menu li {
+       list-style: none; /* リストの[・]を消す */
+   }
+   
+   header .gnav .menu li + li {
+       margin-left: 5vw; /* メニューそれぞれに間隔をあけるため */
+   }
+   
+   .category{
+       padding: 0;
+       list-style: none; /* リストの[・]を消す */
+      
+   }
+   
+   main {
+       height: 100vw; /* スクロールの演出を見れるようにmainに高さを指定 */
+       display: flex;
+   }
+   
+   
+   
+   /*検索ボックス*/
+   .serch{
+       text-align: center;
+   }
+   
+   .serch input{
+       width: 60vw;
+       height: 8vh;
+      text-align: left;
+   }
+   
+   .serchbutton{ 
+       cursor: pointer;
+       font-size: 1.2em;
+       border: none;
+       background: #4aa067;
+       border: 1px solid #4aa067;
+       border-radius: 3px;
+       color: #fff;
+       outline : none;
+       width: 3.5em;
+       height: 1.9em;
+       display: inline-block;
+       vertical-align: middle;
+       font-family: 'Material Icons Outlined';
+       content: "e8b6";
+     }
+   
+     
+   input[type=checkbox]{
+       transform: scale(2);
+       margin-top: 3vh;
+       margin-left: 7vw;
+       accent-color: #cc7700;
+       z-index: 1;
+   }
+   
+   /*投稿の上に表示されるカテゴリタイトル*/
+   .category_title{
+       font-size: 45px;
+       border-bottom: solid 3px #4aa067 ;
+       color: #4aa067;
+       margin: 3vh 0;
+       padding-left: 2vw;
+    }
+   
+   /*投稿の表示*/
+   .page{
+      text-align: center;
+   }
+   
+   .toukou{
+       display: inline-block;
+       width: 43%;
+       margin: 2vh 2vw;
+       border: 1px none black;
+       border-radius: 5px;
+   }
+   
+   .title{
+       display: block;
+       margin: 5px;
+       margin-left: 2vw;
+       margin-top: 9px;
+       font-size: 30px
+       
+   }
+   
+   .icon{
+       margin-left: 1vw;
+       display: inline-block;
+       width: 50px;
+       height: 50px;
+       object-fit: cover;
+       border-radius: 50%;
+   }
+   
+    .username{
+       margin-left: 5px;
+       display: inline-block;
+       vertical-align: top;
+       font-size: 15px;
+    }
+   
+    .main{
+      text-align: left;
+      display: inline-block;
+       height: 100px;
+       width: 80%;
+       margin: 5px;
+       padding-left: 2vw;
+       padding-right: 2vw;
+    }
+   
+    .tagspase{
+       border-top: 1px solid black;
+       padding-left: 2vw;
+       padding-right: 2vw;
+    }
+   
+    .tag{
+       margin: 10px;
+       display: inline-block;
+   
+    }
+   
+    .toukou{
+       background-color: #FFFFFF;
+       color: black;
+    }
+   
+    .toukou > a:visited{
+      color: black;
+    }
+   
+    .contents{
+       display: block;
+       width: 80%;
+       height: 100%;
+    }
+   
+    /*右の欄*/
+    .sub{
+       margin: 0 2vw;
+       width: 25%;
+    }
+   
+    .category{
+       font-size: 20px;
+    }
+   
+    .category li{
+       margin: 2vh 0;
+       text-align: center;
+       text-decoration: none;
+    }
+   
+    /*投稿詳細画面*/
+   .shousai{
+       width: 80%;
+       margin: auto;
+       margin-bottom: 10vh;
+   }
+   
+    .moto_post{
+       width: 80%;
+       background-color: white;
+       margin: auto;
+       border-radius: 5px;
+       padding: 2vh 2vw;
+    }
+   
+    .s_title{
+       font-size: 30px;
+       margin-top: 0;
+       margin-bottom: 0;
+    }
+   
+    .s_icon{
+       margin-left: 1vw;
+       display: inline-block;
+       width: 80px;
+       height: 80px;
+       object-fit: cover;
+       border-radius: 50%;
+   }
+   
+   .s_username{
+       margin-left: 5px;
+       display: inline;
+       vertical-align: top;
+       font-size: 22px;
+    }
+   
+    .s_time{
+       margin-left: 5px;
+       display: inline;
+       vertical-align: top;
+       font-size: 18px;
+    }
+   
+    .s_div{
+       display: inline-block;
+       vertical-align: top;
+    }
+   
+    .s_main{
+       padding-bottom: 30px;
+    }
+   
+    .s_comment{
+       display: block;
+       width: 80%;
+       background-color: white;
+       margin: auto;
+       border-radius: 5px;
+       padding: 2vh 2vw;
+    }
+   
+    .replybtn{
+       display: block;
+       margin: auto;
+       font-size: 30px;
+       padding-left: 2vw;
+       padding-right: 2vw;
+       border-radius: 10px;
+       margin-top: 1vh;
+       border: none;
+       background-color: #4aa067;
+       color: white;
+    }
+   
+    .comment-list{
+       width: 80%;
+       background-color: white;
+       margin: auto;
+       border-radius: 5px;
+       padding: 2vh 2vw;
+    }
+   
+    .time{
+       margin-left: 5px;
+       display: inline;
+       vertical-align: top;
+       font-size: 14px;
+    }
+   
+    .category_title_sub{
+       font-size: 25px;
+       color: #4aa067;
+       margin: 3vh 0;
+       padding-left: 2vw;
+    }
+   
+    .mypost__texts-more{
+      opacity: 0;
+      text-align: right;
+      margin-right: 2vw;
+    }
+   
+   .newpost{
+      padding: 1vh 1vw;
+      border-radius: 10px;
+      border: none;
+      background-color: #4aa067;
+      color: white;
+      font-size: 25px;
+    }
+   
+    .login{
+      padding: 1vh 1vw;
+      border-radius: 10px;
+      border: solid 3px #4aa067;
+      background-color: white;
+      color: #4aa067;
+      font-size: 25px;
+    }
+   
+    .mypage{
+      padding: 1vh 1vw;
+      border-radius: 10px;
+      border: solid 3px #4aa067;
+      background-color: white;
+      color: #4aa067;
+      font-size: 25px;
+    }
+   
+    a{
+      color: black;
+      text-decoration: none;
+    }
+   
+    .back{
+      font-family: 'Material Icons Outlined';
+       content: "e5c4";
+       border: none;
+       font-size: 50px;
+    }
+   
+    li:has(a){
+      display: block;
+      text-align: center;
+    }
+   
+    .tagicon{
+      display: inline;
+      font-family: 'Material Icons Outlined';
+      content: "e54e";
+      font-size: 20px;
+    }
+   
+    .categoryCheckbox:has(label){
+      transform: scale(1);
+      accent-color: #cc7700;
+      z-index: 1;
+      font-size: 25px
+    }
+   
+    .tagaddbtn{
+      display: inline;
+      font-size: 20px;
+      padding: 1vh 1vw;
+      border-radius: 10px;
+      border: none;
+      background-color: #4aa067;
+      color: white;
+    }
+   
+    .postbtn{
+      display: block;
+      font-size: 40px;
+      margin: auto;
+      padding: 1vh 1vw;
+      border-radius: 10px;
+      border: none;
+      background-color: #4aa067;
+      color: white;
+    }
+   
+    .login_input{
+      width: 70%;
+      display: block;
+      font-size: 30px;
+      margin: 2vh;
+    }
+   
+    .initial_a{
+      color: blue;
+      text-decoration: underline;
+    }
+
+    .nav{
+      display: none;
+    }
+
+    .icon_newpost{
+      display: none;
+    }
+
+    .main__head{
+      background-color: white;
+    }
+
+    .edit{
+      padding: 1vh 1vw;
+      border-radius: 10px;
+      border: solid 3px #4aa067;
+      background-color: white;
+      color: #4aa067;
+      font-size: 10px;
+    }
+
+    .user__btn{
+      border: none;
+    }
+   }
