@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 // ボタンが押されたかチェック
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // セッション破棄後の処理（例：リダイレクト）
-    header("Location: https://higashi.fool.jp/nayami/idpasslogin/index.html");
+    header("Location: [URL]/idpasslogin/index.html");
     // セッション変数を全て削除
     $_SESSION = array();
 

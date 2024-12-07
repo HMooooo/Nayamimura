@@ -1,6 +1,6 @@
 <?php
 // 投稿一覧画面に遷移する
-header("Location: https://higashi.fool.jp/nayami/ichiran/ichiran2.php?currentpage=1");
+header("Location: [URL]/ichiran/ichiran2.php?currentpage=1");
 require('../dbconnect.php');
 $userid = $_SESSION['userId'];
 

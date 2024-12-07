@@ -1,7 +1,7 @@
 <?php
 error_reporting(-1);
 ini_set('display_errors','On');
-header("location:https://higashi.fool.jp/nayami/ichiran/ichiran2.php");
+header("location:[URL]/ichiran/ichiran2.php");
 // $userid =  $_POST['userId'];
 $password = $_POST['password'];
 $hashedPass = password_hash($password, PASSWORD_DEFAULT);
